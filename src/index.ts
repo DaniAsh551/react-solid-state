@@ -56,8 +56,14 @@ function trackNesting<T extends any[]>(args: T): T {
 }
 
 function useForceUpdate() {
-  const [, setTick] = rState(0);
-  return rCallback(() => setTick(t => t + 1), []);
+  const [tick, setTick] = rState(0);
+  const fn = rCallback(() => {
+    setTick((t) => t + 1);
+    return () => {};
+  }, []);
+  const fn2 = rCallback(() => tick, []);
+  const state = rSyncExternalStore(fn, fn2);
+  return fn;
 }
 
 export function useObserver<T>(fn: () => T) {
