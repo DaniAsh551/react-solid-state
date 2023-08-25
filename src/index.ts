@@ -5,7 +5,8 @@ import {
   useEffect as rEffect,
   useMemo as rMemo,
   useRef as rRef,
-  useState as rState
+  useState as rState,
+  useSyncExternalStore as rSyncExternalStore,
 } from "react";
 import {
   createComputed as sComputed,
