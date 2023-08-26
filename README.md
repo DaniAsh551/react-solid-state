@@ -1,5 +1,18 @@
 # React Solid State
 
+## NOTE
+This is a fork of the original [react-solid-state](https://github.com/solidjs/react-solid-state) containing the POC workaround stated by *jorroll* in [this issue](https://github.com/solidjs/react-solid-state/issues/4).
+
+This fork is meant to be used as a stop-gap solution until proper react 18 support is added upstream and should not be merged into the upstream repository.
+
+You can use this for in your project by running:
+`npm install --save DaniAsh551/react-solid-state#f99eef0a25f77f0081ddd0054bed3ac68f78b3e6` or `yarn add DaniAsh551/react-solid-state#f99eef0a25f77f0081ddd0054bed3ac68f78b3e6`
+
+You may also need additional steps depending on your stack.
+
+<hr />
+
+
 [![Build Status](https://github.com/solidjs/react-solid-states/workflows/React%20Solid%20State%20CI/badge.svg)](https://github.com/solidjs/react-solid-state/actions/workflows/main-ci.yml)
 [![NPM Version](https://img.shields.io/npm/v/react-solid-state.svg?style=flat)](https://www.npmjs.com/package/react-solid-state)
 ![](https://img.shields.io/librariesio/release/npm/react-solid-state)
